@@ -15,7 +15,7 @@ public class Main {
     }
 
     private static void printSummary(String name, Maze maze, Results res) {
-        System.out.println("=== " + name + " ===");
+        System.out.println(name + ":");
         System.out.println("Path Length (steps): " + (res.shortestPath().size() - 1));
         System.out.println("Total Terrain Cost:  " + res.cost());
         System.out.println("Cells Visited:       " + res.visitedOrder().size());
